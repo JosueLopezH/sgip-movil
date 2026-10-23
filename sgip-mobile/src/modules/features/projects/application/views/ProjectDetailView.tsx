@@ -1,4 +1,4 @@
-import { BaseView } from '@/core/ui/BaseView';
+import { BaseView } from "@/shared/ui/BaseView";
 
 interface ProjectDetailViewProps {
     id: string;
