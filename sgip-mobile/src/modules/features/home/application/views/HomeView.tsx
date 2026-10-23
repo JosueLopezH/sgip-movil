@@ -1,5 +1,6 @@
 import { BaseView } from "@/shared/ui/BaseView";
 
+
 export function HomeView() {
     return (
         <BaseView
