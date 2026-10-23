@@ -1,15 +1,19 @@
-import { Colors } from '@/core/theme/colors';
+import { Colors } from '@/shared/theme/colors';
 import { useRouter } from 'expo-router';
 import { useEffect } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { useAuth } from '../AuthContext';
 
 export function SplashView() {
   const router = useRouter();
+  const { user, isLoading } = useAuth();
 
   useEffect(() => {
-    const timer = setTimeout(() => router.replace('/login'), 1200);
-    return () => clearTimeout(timer);
-  }, [router]);
+    if (isLoading) {
+      return;
+    }
+    router.replace(user ? '/home' : '/login');
+  }, [isLoading, user, router]);
 
   return (
     <View style={styles.container}>

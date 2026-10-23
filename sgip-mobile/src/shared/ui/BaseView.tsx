@@ -1,6 +1,7 @@
-import { Colors } from '@/core/theme/colors';
+import { Colors } from '@/shared/theme/colors';
 import { Ionicons } from '@expo/vector-icons';
 import { Link, type Href } from 'expo-router';
+import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export interface ViewAction {
@@ -12,9 +13,10 @@ interface BaseViewProps {
   title: string;
   description: string;
   actions?: ViewAction[];
+  children?: ReactNode;
 }
 
-export function BaseView({ title, description, actions = [] }: BaseViewProps) {
+export function BaseView({ title, description, actions = [], children }: BaseViewProps) {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
@@ -29,6 +31,7 @@ export function BaseView({ title, description, actions = [] }: BaseViewProps) {
           </Pressable>
         </Link>
       ))}
+      {children}
     </View>
   );
 }
