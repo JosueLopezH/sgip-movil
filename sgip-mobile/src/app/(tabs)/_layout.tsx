@@ -1,4 +1,4 @@
-import { Colors } from '@/core/theme/colors';
+import { Colors } from '@/shared/theme/colors';
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import { StyleSheet } from 'react-native';

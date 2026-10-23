@@ -1,4 +1,5 @@
-import { BaseView } from '@/core/ui/BaseView';
+import { BaseView } from "@/shared/ui/BaseView";
+
 
 export function NewBudgetView() {
     return (

@@ -1,4 +1,4 @@
-import { stackScreenOptions } from '@/core/theme/stackOptions';
+import { stackScreenOptions } from '@/shared/theme/stackOptions';
 import { Stack } from 'expo-router';
 
 export default function TasksLayout() {
