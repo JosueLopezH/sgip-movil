@@ -1,3 +1,4 @@
+import { BaseView } from "@/shared/ui/BaseView";
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import { Alert, FlatList, Pressable, StyleSheet, Text, View } from 'react-native';

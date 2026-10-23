@@ -1,3 +1,5 @@
+import { BaseView } from "@/shared/ui/BaseView";
+
 import { useCallback } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text } from 'react-native';
 import { useAsync } from '@/shared/hooks/useAsync';

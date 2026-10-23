@@ -1,6 +1,5 @@
 import { BaseView } from "@/shared/ui/BaseView";
 
-
 export function BudgetsView() {
     return (
         <BaseView

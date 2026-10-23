@@ -1,3 +1,4 @@
+import { BaseView } from "@/shared/ui/BaseView";
 import { useAsync } from '@/shared/hooks/useAsync';
 import { Colors } from '@/shared/theme/colors';
 import { Badge } from '@/shared/ui/Badge';
